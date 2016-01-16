@@ -1,0 +1,28 @@
+{
+  "name": "http-framework",
+  "version": "1.0.0",
+  "description": "This is HTTP-Framework ",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/**/*test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yueyue07/HTTP-Framework.git"
+  },
+  "author": "Yueyue Qin; Stephen Salzer; Darcy Lambrecht",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yueyue07/HTTP-Framework/issues"
+  },
+  "homepage": "https://github.com/Yueyue07/HTTP-Framework#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.3.4",
+    "superagent-cli": "^2.1.0"
+  }
+}
