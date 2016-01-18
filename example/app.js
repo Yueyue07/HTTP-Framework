@@ -1,4 +1,5 @@
-const app = require('./lib/server');
+//const app = require('./lib/server'); // origin file
+const app = require('explore-401');
 
 //response as string 'hello' in app.res.content
 app.router.post('/hello', app.postRequest);
