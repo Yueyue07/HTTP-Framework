@@ -1,7 +1,7 @@
 const app = require('./lib/server');
 
 //response as string 'hello' in app.res.content
-app.router.get('/welcome/1', app.res.buildResponse('hello'));
+app.router.post('/hello', app.postRequest());
 
 //response as json format and input object {note:'hello'} in app.res.content
 app.router.get('/',app.res.buildResponse({note:'hello'}));
