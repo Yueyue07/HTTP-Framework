@@ -1,37 +1,18 @@
 const Router = require(__dirname + '/../lib/router');
 const http = require('http');
 const server = require(__dirname + '/../lib/server').server;
+const response = require(__dirname + '/../lib/response').buildResponse;
 
 var router = new Router();
-router.get('/test', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.write(JSON.stringify({msg: 'test from get'}));
-  res.end();
-});
+router.get('/test', response('test from get'));
 
-router.put('/test', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.write(JSON.stringify({msg: 'test from put'}));
-  res.end();
-});
+router.put('/test', response('test from put'));
 
-router.post('/test', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.write(JSON.stringify({msg: 'test from post'}));
-  res.end();
-});
+router.post('/test', response('test from post'));
 
-router.patch('/test', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.write(JSON.stringify({msg: 'test from patch'}));
-  res.end();
-});
+router.patch('/test', response('test from patch'));
 
-router.delete('/test', function(req, res) {
-  res.writeHead(200, {'Content-Type': 'application/json'});
-  res.write(JSON.stringify({msg: 'test from delete'}));
-  res.end();
-});
+router.delete('/test', response('test from delete'));
 
 module.exports = server(router.route()).listen(4000, () => {
   console.log('server up');
