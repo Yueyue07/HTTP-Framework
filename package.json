@@ -2,7 +2,7 @@
   "name": "explore-401",
   "version": "1.0.0",
   "description": "This is HTTP-Framework ",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/**/*test.js"
   },
