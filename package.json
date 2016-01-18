@@ -1,5 +1,5 @@
 {
-  "name": "http-framework",
+  "name": "explore-401",
   "version": "1.0.0",
   "description": "This is HTTP-Framework ",
   "main": "app.js",
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/Yueyue07/HTTP-Framework#readme",
   "keywords": [
-  "framework",
-  "rest",
-  "restful",
-  "router",
-  "app"
-],
+    "framework",
+    "rest",
+    "restful",
+    "router",
+    "app"
+  ],
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-http": "^1.0.0",
@@ -31,5 +31,16 @@
     "gulp-mocha": "^2.2.0",
     "mocha": "^2.3.4",
     "superagent-cli": "^2.1.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai-http": "1.0.0",
+    "chai": "3.4.1",
+    "gulp-eslint": "1.1.1",
+    "gulp-mocha": "2.2.0",
+    "superagent-cli": "2.1.0",
+    "gulp": "3.9.0"
   }
 }
