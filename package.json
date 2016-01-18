@@ -2,7 +2,7 @@
   "name": "http-framework",
   "version": "1.0.0",
   "description": "This is HTTP-Framework ",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/**/*test.js"
   },
@@ -16,6 +16,13 @@
     "url": "https://github.com/Yueyue07/HTTP-Framework/issues"
   },
   "homepage": "https://github.com/Yueyue07/HTTP-Framework#readme",
+  "keywords": [
+  "framework",
+  "rest",
+  "restful",
+  "router",
+  "app"
+],
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-http": "^1.0.0",
