@@ -12,7 +12,7 @@
 Here is the example of url post
 
 ```js
-var app = require('explore-401')
+const app = require('explore-401');
 
 app.router.post('/post', app.postRequest);
 
@@ -20,12 +20,12 @@ app.server(app.router.route()).listen(4000, () => {
   console.log('server up');
 });
 ```
-Here you can use superagent localhost:4000/post post '{"hello":"world"}' and post any json data type you want
+Here you can use `superagent localhost:4000/post post '{"hello":"world"}'` and post any data with json type you want.
 
 Here is the example of url get
 
 ```js
-var app = require('explore-401')
+const app = require('explore-401');
 
 app.router.get('/get', app.res.buildResponse({note:'hello'}));
 
@@ -33,7 +33,7 @@ app.server(app.router.route()).listen(4000, () => {
   console.log('server up');
 });
 ```
-In `app.res.buildResponse()`, you could pass string, object and html into `app.res.buildResponse()`.
+In `app.res.buildResponse()`, you could pass data with string, object or html type into `app.res.buildResponse()`.
 
 ## Build Response
 The buildResponse function simplifies the response object from the server and detects the content type of the data passed in.
