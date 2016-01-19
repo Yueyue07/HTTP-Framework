@@ -20,7 +20,7 @@ app.server(app.router.route()).listen(4000, () => {
   console.log('server up');
 });
 ```
-Here you can use superagent localhost:4000/post post '{"hello":"world"}'
+Here you can use superagent localhost:4000/post post '{"hello":"world"}' and post any json data type you want
 
 Here is the example of url get
 
@@ -33,6 +33,7 @@ app.server(app.router.route()).listen(4000, () => {
   console.log('server up');
 });
 ```
+In `app.res.buildResponse()`, you could pass string, object and html into `app.res.buildResponse()`.
 
 ## Build Response
 The buildResponse function simplifies the response object from the server and detects the content type of the data passed in.
@@ -41,13 +42,13 @@ The buildResponse function simplifies the response object from the server and de
 Handles the post request using superagent-cli.
 
 ## Dependencies
-mocha
-gulp-mocha
-chai
-chai-http
-superagent-cli
-eslint
-gulp-eslint
+-mocha
+-gulp-mocha
+-chai
+-chai-http
+-superagent-cli
+-eslint
+-gulp-eslint
 
 ## License
 The MIT License (MIT)
