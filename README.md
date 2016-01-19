@@ -42,13 +42,13 @@ The buildResponse function simplifies the response object from the server and de
 Handles the post request using superagent-cli.
 
 ## Dependencies
--mocha
--gulp-mocha
--chai
--chai-http
--superagent-cli
--eslint
--gulp-eslint
+* mocha
+* gulp-mocha
+* chai
+* chai-http
+* superagent-cli
+* eslint
+* gulp-eslint
 
 ## License
 The MIT License (MIT)
